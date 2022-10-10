@@ -1,0 +1,8 @@
+
+@media all and (max-width: 768px){
+	.item{
+		width: 200%;
+		column-count: 1;
+	}
+}
+
