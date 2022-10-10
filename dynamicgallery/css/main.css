@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'headhead';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/aa_badaboom.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'copy';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/ALGER.TTF') format('ttf');
+}
+.img-box{
+	column-count: 4;
+	column-gap: 3px;
+	width: 120%;
+	max-width: 1400px;
+	margin: auto;
+}
+.image{
+	max-width: 100%;
+	display: block;
+}
+.img-wrapper{
+	display: block;
+	opacity: 0.8;
+	transition: 0.7s;
+	filter: contrast(200%) blur(3px);
+
+}
+.img-wrapper:hover{
+	opacity: 1;
+	filter: blur(0) brightness(1.2);
+
+}
+.img-wrapper + .img-wrapper{  
+	margin: 3px 0;
+}
+.heading{
+	font-size: 52px;
+	text-align: center;
+	width: 100%;
+	font-family: 'headhead','AA BadaBoom BB';
+	color: rgb(33, 194, 54);
+}
+.copyright {
+	width: 740px; 
+	padding: 0 30px 30px;
+	margin: right; 
+	font-family: 'copy','Algerian';
+	color: rgb(33, 194, 54);
+}
