@@ -2,7 +2,7 @@
 	font-family: 'headhead';
 	font-style: normal;
 	font-weight: 400;
-	src: url('fonts/aa_badaboom.ttf') format('ttf');
+	src: url('fonts/aa_badaboom.TTF') format('ttf');
 }
 @font-face {
 	font-family: 'copy';
