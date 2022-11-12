@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<img class="pf-c-brand" src="img/1.png">
+	<link rel="stylesheet" href="css/patternfly.css">
+	<link rel="stylesheet" href="media/media.css">
+</head>
+<body>
+	<div class="pf-c-page">
+		<header class="pf-c-page__header">
+		  <div class="pf-c-page__header-brand">
+			<img class="pf-c-brand" style="--pf-c-brand--Width: 30px; --pf-c-brand--Width-on-sm: 30px; --pf-c-brand--Width-on-md: 60px;" src="img/2.gif"/>
+		  </div>
+		  <div class="pf-c-page__header-nav">
+	<nav class="pf-c-nav pf-m-horizontal-subnav" aria-label="Local">
+		<ul class="pf-c-nav__list">
+		  <li class="pf-c-nav__item">
+			<a href="1.html" class="pf-c-nav__link">Что такое микроразметка</a>
+		  </li>
+		  <li class="pf-c-nav__item">
+			<a href="2.html" class="pf-c-nav__link">Зачем нужна микроразметка</a>
+		  </li>
+		  <li class="pf-c-nav__item">
+			<a href="3.html" class="pf-c-nav__link">Словари микроразметки</a>
+		  </li>
+		  <li class="pf-c-nav__item">
+			<a href="#" class="pf-c-nav__link pf-m-current">Синтаксисы микроразметки</a>
+		  </li>
+		</ul>
+	  </nav>
+	</div>
+  </header>
+  <main class="pf-c-page__main" tabindex="-1">
+    <section class="pf-c-page__main-section pf-m-dark-100">
+		<div class="pf-c-sidebar pf-m-split">	
+			<div class="pf-c-sidebar__main">
+			  <div class="pf-c-sidebar__panel"></div>
+			  <div class="pf-c-sidebar pf-m-panel-right">
+				<div class="pf-c-sidebar__main">
+				  <div class="pf-c-sidebar__panel"></div>
+
+		<div class="pf-c-content">
+		<h1 class="pf-c-title pf-m-4xl">Синтаксисы микроразметки</h1>
+	<p>
+	<h2><dt>Какие синтаксисы микроразметки существуют??? </dt></h2>
+	<ul>
+		<li>
+			<strong>Microdata</strong>
+		</li>
+	</ul>	
+	<dd>Данный синтаксис впервые появился в HTML-5. Благодаря ему поисковые системы начали лучше понимать контент на сайте и использовать его в результатах поиска. Microdata подразумевает разметку непосредственно в коде сайта, добавляя к текстовым блокам соответствующие атрибуты.  </dd>
+	</p>
+	<table
+	class="pf-c-table pf-m-grid-md"
+	role="grid"
+	id="table-basic"
+  >	
+	<caption>Плюсы и минусы Microdata </caption>
+	<thead>
+		<tr role="row">
+		  <th role="columnheader" scope="col">Плюсы</th>
+		  <th role="columnheader" scope="col">Минусы</th>
+		</tr>
+	</thead>
+	<tbody role="rowgroup">
+		<tr role="row">
+		  <td role="cell" data-label="Плюсы">Все форматы поддерживаются как Google, так и Yandex.</td>
+		  <td role="cell" data-label="Минусы">Трудно поддерживать. Бывает, что нужно изменить что-то на странице, а этот элемент кода напрямую лежит в микроразметке. Легко "сломать" логику микроразметки, внося изменения.</td>
+	</tbody>
+	<tbody role="rowgroup">
+		<tr role="row">
+		  <td role="cell" data-label="Плюсы">Размечается реальный текст на странице, что минимизирует риск спама в микроразметке</td>
+		  <td role="cell" data-label="Минусы">Сложности реализации на некоторых CMS</td>
+	</tbody>
+	<tbody role="rowgroup">
+		<tr role="row">
+		  <td role="cell" data-label="Минусы">Сложность с визуальной работой с кодом страницы.</td>
+	</tbody>
+		</table>
+	<p>
+	<ul>
+		<li>
+			<strong>RDFa </strong>
+		</li>
+	</ul>	
+	<dd>В 2004 году данный синтаксис разработали специалисты из W3C (World Wide Web Consortium) для структурирования данных на сайтах. Все данные размечаются в HTML-коде.На данный момент RDFa чаще всего используется в словаре Open Graph.</dd>
+	</p>
+	<table
+	class="pf-c-table pf-m-grid-md"
+	role="grid"
+	id="table-basic"
+  >	
+	<caption>Плюсы и минусы RDFa </caption>
+	<thead>
+		<tr role="row">
+		  <th role="columnheader" scope="col">Плюсы</th>
+		  <th role="columnheader" scope="col">Минусы</th>
+		</tr>
+	</thead>
+	<tbody role="rowgroup">
+		<tr role="row">
+		  <td role="cell" data-label="Плюсы"> Изменения архитектуры информационной системы, построенной на модели RDF, происходят легче</td>
+		  <td role="cell" data-label="Минусы">Сложен в реализации</td>
+	</tbody>
+	<tbody role="rowgroup">
+		<tr role="row">
+		  <td role="cell" data-label="Плюсы"> Благодаря стандартизации, данные, выгруженные из любого RDF-хранилища, можно загружать в RDF-хранилища различных производителей</td>
+		  <td role="cell" data-label="Минусы">Избыточность и фактическая необходимость разработчику применять две разметки одновременно</td>
+	</tbody>
+		</table>
+	<p>
+	<ul>
+		<li>
+			<strong>JSON-LD</strong>
+		</li>
+	</ul>	
+	<dd>Самый молодой и актуальный формат. Первый черновик этого синтаксиса появился в 2010 году. Основное отличие от остальных — JSON-LD внедряется не в код страницы, а в тег script. JSON-LD представляет из себя набор пар “ключ-значение”, который очень легко понимает не только поисковый бот, но и сам человек. </dd>
+	</p>
+	<p>
+		<table
+		class="pf-c-table pf-m-grid-md"
+		role="grid"
+		id="table-basic"
+	  >	
+		<caption>Плюсы и минусы JSON-LD </caption>
+		<thead>
+			<tr role="row">
+			  <th role="columnheader" scope="col">Плюсы</th>
+			  <th role="columnheader" scope="col">Минусы</th>
+			</tr>
+		</thead>
+		<tbody role="rowgroup">
+			<tr role="row">
+			  <td role="cell" data-label="Плюсы">Простой синтаксис</td>
+			  <td role="cell" data-label="Минусы">Больше возможностей для спама в микроразметке (использование несоответствующей контенту сайта информации)</td>
+		</tbody>
+		<tbody role="rowgroup">
+			<tr role="row">
+			  <td role="cell" data-label="Плюсы">Поддержка (и легкое внесение изменений) в основных CMS</td>
+			  <td role="cell" data-label="Минусы">Не все форматы полноценно поддерживаются некоторыми поисковиками</td>
+		</tbody>
+		<tbody role="rowgroup">
+			<tr role="row">
+			  <td role="cell" data-label="Плюсы">Разметка используется отдельным блоком в коде страницы, что создает больше гибкости при правках</td>
+		</tbody>
+		<tbody role="rowgroup">
+			<tr role="row">
+			  <td role="cell" data-label="Плюсы">Возможность использования на сайтах с динамическим контентом, где нет полноценной текстовой составляющей</td>
+		</tbody>
+			</table>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="pf-c-page__main-section pf-m-dark-200">
+	<picture
+  		class="pf-c-brand pf-m-picture"
+  		style="--pf-c-brand--Width: 720px; --pf-c-brand--Width-on-sm: 720px; --pf-c-brand--Width-on-md: 2500px;"
+		>
+	<img class="pf-c-brand" src="img/4.jpg">
+	</picture>
+</section>
+</body>
+</html>
