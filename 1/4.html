@@ -36,10 +36,24 @@
     <section class="pf-c-page__main-section pf-m-dark-100">
 		<div class="pf-c-sidebar pf-m-split">	
 			<div class="pf-c-sidebar__main">
-			  <div class="pf-c-sidebar__panel"></div>
+			  <div class="pf-c-sidebar__panel">
+				<picture
+				class="pf-c-brand pf-m-picture"
+				style="--pf-c-brand--Width: 100px; --pf-c-brand--Width-on-sm: 250px; --pf-c-brand--Width-on-md: 300px; --pf-c-brand--Height-on-md: 3200px;"
+			  >
+		  <img class="pf-c-brand" src="img/10.gif">
+		  </picture>
+			  </div>
 			  <div class="pf-c-sidebar pf-m-panel-right">
 				<div class="pf-c-sidebar__main">
-				  <div class="pf-c-sidebar__panel"></div>
+				  <div class="pf-c-sidebar__panel">
+					<picture
+				class="pf-c-brand pf-m-picture"
+				style="--pf-c-brand--Width: 100px; --pf-c-brand--Width-on-sm: 250px; --pf-c-brand--Width-on-md: 300px; --pf-c-brand--Height-on-md: 3200px;"
+			  >
+		  <img class="pf-c-brand" src="img/10.gif">
+		  </picture>
+				  </div>
 
 		<div class="pf-c-content">
 		<h1 class="pf-c-title pf-m-4xl">Синтаксисы микроразметки</h1>
@@ -79,6 +93,27 @@
 		  <td role="cell" data-label="Минусы">Сложность с визуальной работой с кодом страницы.</td>
 	</tbody>
 		</table>
+	<div class="pf-c-code-block">
+		<div class="pf-c-code-block__header">
+		<caption>Пример разметки Microdata</caption>
+		</div>
+		<div class="pf-c-code-block__content">
+		<pre class="pf-c-code-block__pre">
+			<code class="pf-c-code-block__code" >
+		<pre>
+			article itemscope itemtype="http://schema.org/Article"
+			h1 itemprop="name">Микроразметка /h1
+			meta itemprop="inLanguage" content="ru" /
+			section itemprop="articleBody">Давайте поговорим о микроразметке /section
+			section itemprop="author" itemscope itmetype="http://schema.org/Person"
+			span itemprop="additionalName">Представители SEO /span
+			section
+			article
+		</pre>
+		</code>
+		</pre>
+		</div>
+	</div>
 	<p>
 	<ul>
 		<li>
@@ -110,6 +145,34 @@
 		  <td role="cell" data-label="Минусы">Избыточность и фактическая необходимость разработчику применять две разметки одновременно</td>
 	</tbody>
 		</table>
+		<div class="pf-c-code-block">
+			<div class="pf-c-code-block__header">
+			<caption>Пример разметки RDFa</caption>
+			</div>
+			<div class="pf-c-code-block__content">
+			<pre class="pf-c-code-block__pre">
+				<code class="pf-c-code-block__code" >
+			<pre>
+					div vocab="http://schema.org/" typeof="Article"
+					span property="name">RDFa /span
+					by span property="author">SEO-специлист /span
+					Эту статью твитнули 20 раз и откомментировало 10 человек
+					div property="interactionStatistic" typeof="InteractionCounter"
+					div property="interactionService" itemscope itemid="http://www.twitter.com" itemtype="http://schema.org/Website"
+					meta property="name" content="Twitter" /
+					/div
+					meta property="interactionType" content="http://schema.org/ShareAction"/
+					meta property="userInteractionCount" content="20" />
+					/div
+					div property="interactionStatistic" typeof="InteractionCounter">
+					meta property="interactionType" content="http://schema.org/CommentAction"/
+					/div
+					/div
+			</pre>
+			</code>
+			</pre>
+			</div>
+		</div>
 	<p>
 	<ul>
 		<li>
@@ -150,6 +213,44 @@
 			  <td role="cell" data-label="Плюсы">Возможность использования на сайтах с динамическим контентом, где нет полноценной текстовой составляющей</td>
 		</tbody>
 			</table>
+			<div class="pf-c-code-block">
+				<div class="pf-c-code-block__header">
+				<caption>Пример разметки JSON-LD </caption>
+				</div>
+				<div class="pf-c-code-block__content">
+				<pre class="pf-c-code-block__pre">
+					<code class="pf-c-code-block__code" >
+				<pre>
+					script type="application/ld+json"
+						{
+						"@context": "http://schema.org",
+						"@type": "Article",
+						"author": "SEO-специалист",
+						"interactionStatistic": [
+						{
+						"@type": "InteractionCounter",
+						"interactionService": {
+						"@type": "Website",
+								"name": "Twitter",
+								"url": "http://www.twitter.com"
+							  },
+							  "interactionType": "http://schema.org/ShareAction",
+							  "userInteractionCount": "20"
+							},
+							{
+							  "@type": "InteractionCounter",
+							  "interactionType": "http://schema.org/CommentAction",
+							  "userInteractionCount": "10"
+							}
+						  ],
+						  "name": "JSON-LD"
+						}
+					/script
+				</pre>
+				</code>
+				</pre>
+				</div>
+			</div>
 	</div>
 </div>
 </div>
