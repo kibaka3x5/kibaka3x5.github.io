@@ -1,17 +1,18 @@
-@media all and (max-width: 1024px){
+@media all and (max-width: 1500px){
 	.img-box{
 		width: 90%;
 		column-count: 3;
 	}
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 1000px){
 	.img-box{
-		width: 100%;
+		width: 80%;
 		column-count: 2;
 	}
 }
-@media all and (max-width: 480px){
+@media all and (max-width: 800px){
 	.img-box{
+		width: 70%;
 		column-count: 1;
 	}
 }
