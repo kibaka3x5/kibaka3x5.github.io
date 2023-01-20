@@ -2,7 +2,7 @@
 	font-family: 'headhead';
 	font-style: normal;
 	font-weight: 400;
-	src: url('fonts/aa_badaboom.TTF') format('ttf');
+	src: url('fonts/aa_badaboom.ttf') format('ttf');
 }
 @font-face {
 	font-family: 'copy';
@@ -14,6 +14,7 @@
 	column-count: 4;
 	column-gap: 3px;
 	width: 120%;
+	min-width: 500px;
 	max-width: 1400px;
 	margin: auto;
 }
@@ -44,7 +45,7 @@
 	color: rgb(33, 194, 54);
 }
 .copyright {
-	width: 740px; 
+	width: 400px; 
 	padding: 0 30px 30px;
 	margin: right; 
 	font-family: 'copy','Algerian';
