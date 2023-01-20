@@ -1,8 +1,11 @@
 
-@media all and (max-width: 768px){
+@media all and (max-width: 1100px){
 	.item{
 		width: 200%;
 		column-count: 1;
+	}
+	.main{
+		width: 50%;
 	}
 }
 
